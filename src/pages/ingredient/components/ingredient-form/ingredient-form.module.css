@@ -1,0 +1,20 @@
+.grid{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+.contour{
+    margin: var(--space-m);
+    border: 1px solid var(--gray-gray-500);
+    height: 46px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+:placeholder-shown{
+    text-align: left;
+    line-height: 40px;
+    font-size: 18px;
+    margin: 1px 57px 0 0;
+}

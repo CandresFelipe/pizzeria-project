@@ -1,0 +1,8 @@
+.iconpage{
+    display: grid;
+    grid-template-columns: 45rem 1fr;
+    height: 64rem;
+}
+.leftmenu{
+    background-color:  #dc2626;
+}

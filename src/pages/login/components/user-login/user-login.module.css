@@ -1,0 +1,56 @@
+.header1{
+    font-weight: bold;
+    font-size: 2.375rem;
+    line-height: 2.625rem;
+    margin-top: 1.3125rem;
+}
+.header2{
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+    margin-bottom: 1.3125rem;
+}
+button{
+    color: white;
+    background-color:  #dc2626;
+    margin: 40px 0 0 2px;
+    padding: 11px 36.3px 12px 45.4px;
+    border-radius: 5px;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+.container{
+    width: 345px;
+    height: 46px;
+    margin: 5px 0 5px 0;
+    padding: 12px 66.9px 11px 19.9px;
+    border-radius: 5px;
+}
+:placeholder-shown{
+    height: 23px;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6b7280;
+}
+.firstcheckbox{
+    display:flex
+}
+label{
+    display:flex
+}
+p{
+    margin-top: 0rem;
+    margin-bottom: 1.3125rem;
+    margin-left: 10rem;
+}

@@ -1,0 +1,13 @@
+.container{
+    width: 345px;
+    height: 324px;
+    flex-grow: 0;
+    margin: 4px 16px 20px 0;
+    border: 1px solid var(--gray-gray-500);
+    border-radius: 5px;
+    object-fit: contain;
+    justify-content: space-between;
+}
+#img{
+   height: 112px;
+}

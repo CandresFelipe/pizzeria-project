@@ -1,0 +1,49 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+.h2{
+        width: 13em;
+        height: 2em;
+        flex-grow: 0;
+        margin: 0 20em 1em 0;
+        font-family: Quicksand;
+        font-size: 2em;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: black;
+      }
+.image{
+        width: 32em;
+        height: 19em;
+        flex-grow: 0;
+        margin: 2em 3em 2em 0.12em;
+        object-fit: contain;
+      }
+.button{
+    width: 9em;
+    height: 2em;
+    flex-grow: 0;
+    margin: 1em 24em 0 0.12em;
+    padding: 0.5em 2.43em 0.56em 2.37em;
+    border-radius: 0.31em;
+    background-color: red;
+    }
+.SubirImagen{
+    width: 4.37em;
+    height: 0.8125em;
+    flex-grow: 0;
+    font-family: Quicksand;
+    font-size: 0.625em;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}

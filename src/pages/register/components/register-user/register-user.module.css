@@ -1,0 +1,23 @@
+.registeruser{
+    display: grid;
+    grid-template-columns: 45rem;
+}
+.container{
+    height: 46px;
+    margin: 5px 0 5px 0;
+    padding: 12px 67.3px 11px 25px;
+    border-radius: 5px;
+}
+:placeholder-shown{
+    height: 23px;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+
