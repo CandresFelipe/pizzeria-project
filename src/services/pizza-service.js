@@ -11,7 +11,7 @@ export class PizzaService{
     
     static async edit(id){
         const url = resolveUrl(`pizzas/${id}`, urlApi, query);
-        const pizza = await await (await api(url,authorize)).put(body)
+        const pizza = await api(url,authorize).get()
         return {
             pizza
         }

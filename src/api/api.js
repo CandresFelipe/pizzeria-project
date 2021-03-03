@@ -30,7 +30,7 @@ function multiPartFormData(body, options) {
   }
 }
 
-export async function api(url) {
+export function api(url) {
   return {
     get: async function (options = {}) {
       options.method = "GET";
