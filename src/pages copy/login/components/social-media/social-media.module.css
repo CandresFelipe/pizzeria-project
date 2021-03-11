@@ -1,0 +1,51 @@
+p{
+    height: 15px;
+    flex-grow: 0;
+    margin: 0 0px 0 0px;
+    font-family: Quicksand;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color:black;
+}
+.leftline{
+    width: 121px;
+    height: 1px;
+    flex-grow: 0;
+    margin: 15px 0px 15px 0;
+    background-color:#6b7280;
+}
+.rightline{
+    width: 122px;
+    height: 1px;
+    flex-grow: 0;
+    margin: 8px 0 6px 8px;
+    background-color:#6b7280;
+}
+.rrss{
+    width: 345px;
+    height: 46px;
+    flex-grow: 0;
+    margin: 20px 0 0;
+    padding: 12px 0 11px;
+    border-radius: 5px;
+    border: solid 1px #4285F4;
+    background-color: white;
+}
+Google{
+    height: 23px;
+  flex-grow: 0;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4285F4
+}

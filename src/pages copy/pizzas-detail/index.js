@@ -23,11 +23,3 @@ export default function PizzaDetail({ pizza }) {
     )
 
 }
-PizzaDetail.route = '/pizzas/:id'
-PizzaDetail.getData = async function (params) {
-    const { id } = params;
-    const response = await fetch(`http://localhost:3000/pizzas/${id}`);
-    return {
-        pizza: await response.json()
-    }
-}

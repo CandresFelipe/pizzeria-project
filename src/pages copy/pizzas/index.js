@@ -14,8 +14,3 @@ export default function Pizzas({pizzas}) {
             </main>
         </Page>)
 }
-Pizzas.route = '/';
-Pizzas.getData = async function (parms, query) {
-    const {pizzas} = query
-    return await PizzaService.getAll(pizzas);
-}

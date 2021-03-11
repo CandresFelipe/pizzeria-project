@@ -25,3 +25,15 @@ h2, h1{
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 }
+
+:placeholder-shown{
+    height: 23px;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+}
