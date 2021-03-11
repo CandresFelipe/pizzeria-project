@@ -15,7 +15,7 @@ export default function PizzaAdd({ pizza }) {
     )
 }
 
-PizzaAdd.route = '/pizzaadd';
+PizzaAdd.route = '/pizza/add';
 
 PizzaAdd.getData = async function (params, destination) {
     const res = await fetch('http://localhost:3000/')
