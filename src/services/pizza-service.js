@@ -4,7 +4,7 @@ export class PizzaService{
 
     static async getAll(query){
         const url = resolveUrl('pizzas', urlApi, query);
-        const pizzas = await (await api(url)).get()
+        const pizzas = await api(url).get()
         return {
             pizzas
         }
