@@ -2,7 +2,7 @@ import React from "react";
 import { IconPage } from '../../components';
 import { NotRegistered, SocialMedia, UserLogin } from './components';
 
-export default function Login() {
+export default function Login({ingredients}) {
     return (
         <IconPage>
             <main>
@@ -14,3 +14,11 @@ export default function Login() {
     )
 }
 
+Login.route='/login';
+
+Login.getData = async function (params, query) {
+    const res = await fetch('http://localhost:3000/login');
+    return {
+        ingredients: await res.json(),
+    }
+}

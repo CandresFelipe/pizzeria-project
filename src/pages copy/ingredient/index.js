@@ -12,3 +12,11 @@ export default function Ingredients({ ingredients }) {
             </main>
         </Page>)
 }
+Ingredients.route = '/ingredients'
+
+Ingredients.getData = async function (parms, query) {
+    const res = await fetch('http://localhost:3000/ingredients')
+    return {
+        ingredients: await res.json(),
+    }
+}
