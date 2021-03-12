@@ -10,7 +10,7 @@ export function IngredientList({ ingredients }) {
                 {ingredients.map((ingredient) => {
                     return (
                         <li key={ingredient.id} >                           
-                          <div>                         
+                          <div className={css.contour}>                         
                           {ingredient.name} ({ingredient.price}€)
                           </div>
                         </li> 
