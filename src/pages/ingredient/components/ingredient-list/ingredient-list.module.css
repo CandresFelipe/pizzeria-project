@@ -1,6 +1,7 @@
 .grid{
 display: grid;
-grid-template-columns: 1fr 1fr;
+gap: var(--space-m);
+grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 }
 .contour{
     margin: var(--space-m);
@@ -17,8 +18,4 @@ grid-template-columns: 1fr 1fr;
     line-height: 40px;
     font-size: 18px;
     margin: 1px 57px 0 0;
-}
-
-input{
-    border-color: transparent;
 }
