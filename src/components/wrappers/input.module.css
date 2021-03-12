@@ -1,5 +1,10 @@
 .container{
-border-radius: 5px;
+  border-radius: 5px;
   border: solid 1px var(--grey);
   background-color: var(--white);
+}
+label{
+  padding: 1rem 0rem 1rem;
+  font-weight: bold;
+  display: block;
 }

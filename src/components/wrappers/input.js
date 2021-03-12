@@ -3,8 +3,9 @@ import css from './input.module.css'
 
 export function Render(props, ref){
     const {className, label, ...rest} = props;
-   return(<div className={className}>
-        {label && <label><span>{label}</span></label>}
+   return(
+   <div className={css.container}>
+        {label && <label>{label}</label>}
         <input {...rest} ref={ref}/>
     </div>);
 }
