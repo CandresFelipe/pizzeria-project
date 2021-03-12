@@ -18,3 +18,7 @@ grid-template-columns: 1fr 1fr;
     font-size: 18px;
     margin: 1px 57px 0 0;
 }
+
+input{
+    border-color: transparent;
+}

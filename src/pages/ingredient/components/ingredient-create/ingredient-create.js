@@ -11,7 +11,7 @@ export function IngredientCreate() {
             </div>
             <h2> Añade un precio</h2>
             <div className={css.contour}>
-                <Input type="numeric" placeholder="Precio (00.00.00 $)"></Input>
+                <Input type="numeric" placeholder="Precio (00.00 €)"></Input>
             </div>
                 <Button className={css.button} label="Crea un nuevo ingrediente"></Button>
         </Form>

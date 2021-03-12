@@ -11,7 +11,7 @@ export function Ingredient({ ingredients }) {
                 className={css.contour}
                 key ={ingredient.id} 
                 ingredient={ingredient} 
-                placeholder={`${ingredient.name} (${ingredient.prize}.00.00 $)`} />
+                placeholder={`${ingredient.name} (${ingredient.price}€)`} />
                 )
             })}
         </Form>

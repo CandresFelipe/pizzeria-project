@@ -24,6 +24,8 @@ h2, h1{
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+    font-family: Quicksand;
+    font-size: 18px;
 }
 
 :placeholder-shown{
