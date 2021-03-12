@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './button.module.css'
 
 export function Button(props){
     const {className, label} = props;
@@ -6,7 +7,7 @@ export function Button(props){
         alert(`hello ${ev.type}`)
     }
     return(
-        <button className={className}
+        <button className={css.button}
         onClick={onClick}>{label}</button>
     )
 };

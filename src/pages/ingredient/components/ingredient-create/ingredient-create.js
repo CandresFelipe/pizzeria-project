@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Input, Button } from '../../../../components'
 import css from './ingredient-create.module.css'
+
 export function IngredientCreate() {
     return (
         <section>

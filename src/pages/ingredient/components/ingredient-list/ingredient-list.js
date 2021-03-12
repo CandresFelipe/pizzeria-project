@@ -11,7 +11,6 @@ export function IngredientList({ ingredients }) {
                     return (
                         <li key={ingredient.id} >                           
                           <IngredientItem ingredient={ingredient}/>
-
                         </li> 
                     )
                 })}

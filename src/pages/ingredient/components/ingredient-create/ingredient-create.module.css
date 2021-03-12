@@ -5,21 +5,6 @@
     width: 50%;
     border-radius: 5px;
 }
-h2, h1{
-    margin:var(--space-m)
-}
-.button{
-    margin:var(--space-m);
-    background-color: var(--color-primary);
-    border-radius: 6px;
-    border-color: var(--white);
-    color: var(--white);
-    width: 40%;
-    height: 46px;
-    font-family: Quicksand;
-    font-size: 18px;
-}
-
 :placeholder-shown{
     height: 23px;
     font-family: Quicksand;
@@ -31,3 +16,16 @@ h2, h1{
     letter-spacing: normal;
     text-align: left;
 }
+input{
+    flex-grow: 0;
+    padding: 12px 234.3px 11px 20px;
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: white;
+  }
+
+  h2{
+    margin-top:3rem;
+  }
+
+  
