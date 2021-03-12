@@ -3,11 +3,5 @@ display: grid;
 gap: var(--space-m);
 grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
 }
-.contour{
-    margin: var(--space-m);
-    border: 1px solid var(--gray-gray-500);
-    height: 46px;
-    border-radius: 5px;
-    text-align: center;
-}
+
 

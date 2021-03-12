@@ -4,14 +4,11 @@ import css from './ingredient-create.module.css'
 export function IngredientCreate() {
     return (
         <section>
+            <h2>Crear ingredientes</h2>
         <Form>
-            <div>Crear ingredientes
-                <div>Añade un nombre</div>
-                <Input placeholder="Nombre"></Input>
-                <div> Añade un precio</div>
-                <Input type="numeric" placeholder="Precio (00.00 €)"></Input>
-                <Button className={css.button} label="Crea un nuevo ingrediente"></Button>
-            </div>
+                <Input label= "Añade un nombre" placeholder="Nombre"></Input>
+                <Input label ="Añade un precio" type="number" placeholder="Precio (00.00 €)"></Input>
+                <Button className={css.button} label="Crea un nuevo ingrediente"></Button>            
         </Form>
         </section>
     )
