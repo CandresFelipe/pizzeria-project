@@ -5,7 +5,7 @@
 .menu {
     background-color: var(--color-primary);
     color: var(--color-primary-text);
-    height:100vh;
+    height:auto;
     display: flex;
     flex-direction:column;
     justify-content: space-between;

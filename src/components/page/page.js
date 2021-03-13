@@ -17,6 +17,7 @@ export function Page({children}){
                     <div>Carrito</div>
                     <div>Usuario</div>
                 </div>
+                
             </div>
             <main>
                {children}
