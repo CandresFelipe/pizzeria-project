@@ -1,6 +1,6 @@
 import {urlApi, authorize, api, resolveUrl} from '../api';
 
-export class PizzaService{
+export default class PizzaService{
 
     static async getAll(query){
         const url = resolveUrl('pizzas', urlApi, query);
