@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { Page } from '../../components'
 import { IngredientList, IngredientCreate } from './components'
-import '../../styles';
+import '../../styles'
 
 export default function Ingredients({ ingredients }) {
     return (

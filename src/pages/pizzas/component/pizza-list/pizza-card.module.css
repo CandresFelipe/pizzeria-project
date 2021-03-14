@@ -8,6 +8,47 @@
     object-fit: contain;
     justify-content: space-between;
 }
+h2{
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: black;
+}
+h3{
+    font-family: Quicksand;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: black;
+}
+.button1{     
+    flex-grow: 0;
+    width: 147px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #dc2626;
+    color: white;
+    font-family: Quicksand;
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
 #img{
    height: 112px;
 }

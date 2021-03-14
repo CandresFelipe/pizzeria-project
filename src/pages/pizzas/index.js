@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page } from '../../components'
 import { Search, PizzaList } from './component'
+import '../../styles'
 
 
 export default function Pizzas({ pizzas }) {
