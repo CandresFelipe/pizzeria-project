@@ -5,7 +5,7 @@ PizzaDetail.route = '/pizzas/:id'
 
 PizzaDetail.getData = async function (params) {
     const { id } = params;
-    return await PizzaService.getAll(pizzas);
+    return await PizzaService.get(id);
 }
 
 export default PizzaDetail; 

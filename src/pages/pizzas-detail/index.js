@@ -2,7 +2,6 @@ import React from 'react';
 import { BreadCrumbs } from '../../components'
 import { Page } from '../../components';
 import { PizzaImg } from './components/pizza-img/pizza-img';
-import { Ingredient } from '../ingredient/components'
 
 
 export default function PizzaDetail({ pizza }) {
@@ -13,7 +12,6 @@ export default function PizzaDetail({ pizza }) {
                 <BreadCrumbs items={items} />
                 <PizzaImg pizza={pizza} />
                 <h2 pizza={pizza}>{pizza.name}</h2>
-                <Ingredient ingredients={pizza.ingredients} />
                 <button>AÑADIR AL CARRITO</button>
 
             </Page>
