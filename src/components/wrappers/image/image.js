@@ -1,13 +1,14 @@
 import React from 'react'
 
-
-
-export function Image({ image }) {
+export function Image(props) {
+    const {image, ...rest} = props;
+    const {url} = image;
+    const urlwebp = url.replace(/[^.]+$/,'webp')
     return(
     <picture>
-        <source type="image/webp" srcset= {`${image.url}.webp`}/>
-        <source type="image/jpeg" srcset={`${image.url}.jpg`}/>
-        <img src={`${image.url}.jpg`} alt=""/>
+        <source type={urlwebp} srcset= {urlwebp}/>
+        <source type={url} srcset={url}/>
+        <img src={url} {...rest}/>
     </picture>
     )
 }
