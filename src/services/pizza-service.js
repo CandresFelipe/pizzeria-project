@@ -10,9 +10,9 @@ export default class PizzaService{
         }
     }
     
-    static async edit(id){
-        const url = resolveUrl(`pizzas/${id}`, urlApi, query);
-        const pizza = await api(url,authorize).get()
+    static async get(id){
+        const url = resolveUrl(`pizzas/${id}`, urlApi);
+        const pizza = await api(url).get()
         return {
             pizza
         }
