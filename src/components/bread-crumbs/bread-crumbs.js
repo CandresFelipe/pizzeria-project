@@ -1,6 +1,6 @@
 import React from 'react'
 import css from './bread-crumbs.module.css'
-
+import '../../styles'
 
 export function BreadCrumbs({ items }) {
     return (
