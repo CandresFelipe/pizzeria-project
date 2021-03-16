@@ -23,7 +23,8 @@ const client = {
         del({ targets: 'public/dist/*' }),
         virtual(virtualEntries),
         replace({
-            'process.env.NODE_ENV': JSON.stringify('development')
+            'process.env.NODE_ENV': JSON.stringify('development'),
+            'process.env.CLOUD_NAME': JSON.stringify(process.env.CLOUD_NAME)
         }),
         styles({
             autoModules: true,
