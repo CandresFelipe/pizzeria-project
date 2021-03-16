@@ -16,6 +16,15 @@ export default class PizzaService{
         return {
             pizza
         }
+        
+    }
+
+    static async get(id){
+        const url = resolveUrl(`pizzas/${id}`, urlApi);
+        const pizza = await api(url).get()
+        return {
+            pizza
+        }
     }
 
     static async post(){
