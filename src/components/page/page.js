@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './page.module.css';
 import '../../styles'
-export function Page({children}){
+export function Page({ children }) {
     return (
         <div className={css.page}>
             <div className={css.menu + ' on-big'}>
@@ -17,11 +17,9 @@ export function Page({children}){
                     <div>Carrito</div>
                     <div>Usuario</div>
                 </div>
-                
+
             </div>
-            <main>
-               {children}
-            </main>
+            {children}
         </div>
     )
 }

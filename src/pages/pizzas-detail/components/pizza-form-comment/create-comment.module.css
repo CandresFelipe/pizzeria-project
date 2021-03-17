@@ -1,0 +1,9 @@
+.comment{
+    display: grid;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 1rem;
+    justify-items: flex-end;
+}
+.button{
+    width: 10%;
+}

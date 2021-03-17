@@ -6,8 +6,9 @@ export function Button(props){
     function onClick(ev){
         alert(`hello ${ev.type}`)
     }
+    const buttonClass = className && `${css.button} ${className}` || css.button;
     return(
-        <button className={css.button}
+        <button className={buttonClass}
         onClick={onClick}>{children}</button>
     )
 };
