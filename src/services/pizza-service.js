@@ -34,5 +34,15 @@ export default class PizzaService{
             pizza
         }
     }
+
+    static async addComment(){
+        const url = resolveUrl (`pizzas/${id}`, urlApi);
+        const comments = await api(url,authorize).post(body)
+        return {
+            comments
+        }
+    }
+
+
 }
 

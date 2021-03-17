@@ -9,7 +9,7 @@ export function IngredientCreate() {
         <Form>
                 <Input label= "Añade un nombre" placeholder="Nombre"></Input>
                 <Input label ="Añade un precio" type="number" placeholder="Precio (00.00 €)"></Input>
-                <Button className={css.button} label="Crea un nuevo ingrediente"></Button>            
+                <Button className={css.button}>Crea un nuevo ingrediente</Button>            
         </Form>
         </section>
     )

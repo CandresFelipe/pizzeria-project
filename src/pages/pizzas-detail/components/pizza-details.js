@@ -5,7 +5,7 @@ export function PizzaDetails({pizza}){
     return(
         <div>
             <h2>{pizza.name}</h2>
-            <p>{pizza.price}</p>
+            <p>{pizza.price} €</p>
         </div>
     )
 }
