@@ -1,3 +1,13 @@
 .rating{
     font-weight: 600;
 }
+
+.userName{
+    display: flex;
+}
+.date{
+    margin: 0 16px 15px 662px;
+}
+.user{
+    margin: 0 150px 15px 0;
+}

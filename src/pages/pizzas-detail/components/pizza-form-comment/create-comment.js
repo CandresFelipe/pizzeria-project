@@ -4,12 +4,12 @@ import css from './create-comment.module.css'
 
 export function CommentCreation() {
     var options = {
-        '1': 'horrible',
-        '2': 'desagradable',
-        '3': 'feo',
-        '4': 'regular',
-        '5': 'bueno',
-        '6': 'excelente'
+        '1': 'Horrible',
+        '2': 'Mal',
+        '3': 'Regular',
+        '4': 'Buena',
+        '5': 'Muy buena',
+        '6': 'Excelente'
     };
     return (
         <Form>

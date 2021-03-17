@@ -13,8 +13,8 @@ export default function PizzaDetail({ pizza }) {
             <main>
                 <h1 className="visually-hidden">Detalles de la pizza</h1>
                 <BreadCrumbs items={items} />
-                <div >
-                    <Image public_id={pizza.image.public_id} width={16} height={9} big={1024} small={50} />
+                <div>
+                    <Image public_id={pizza.image.public_id} width={5} height={4} big={1024} small={50} />
                 </div>
                 <PizzaDetails pizza={pizza} />
                 <div>

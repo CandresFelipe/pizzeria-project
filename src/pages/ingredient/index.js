@@ -9,6 +9,7 @@ export default function Ingredients({ ingredients }) {
         <Page>
             <main>
                 <h1 className= "visually-hidden">Gestionar Ingredientes</h1>
+                
                 <IngredientList ingredients={ingredients} />
                 <IngredientCreate/>
             </main>

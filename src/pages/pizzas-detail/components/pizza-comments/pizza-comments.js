@@ -10,8 +10,12 @@ export function PizzaComments({ comments }) {
             {comments.map(({ text, rating, id, date }) => {
                 return (
                     <li key={id}>
-                        <p>{new Intl.DateTimeFormat('es').format(new Date(date))}</p>
-                        <p className={css.rating}>Puntuacion {rating}</p>
+                        <div className={css.userName}>
+                            <p className={css.user}>Nombre de usuario</p>
+                            <p className={css.date}>{new Intl.DateTimeFormat('es').format(new Date(date))}</p>
+                        </div>
+
+                        <p className={css.rating}>Puntuación {rating}</p>
                         <p>{text}</p>
                     </li>
                 )
