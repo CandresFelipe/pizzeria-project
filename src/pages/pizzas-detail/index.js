@@ -21,12 +21,14 @@ export default function PizzaDetail({ pizza }) {
                 <div>
                     <h2>Ingredientes</h2>
                     <IngredientList ingredients={pizza.ingredients} />
-                    <CartForm className={css.cartForm} id={pizza.id} />
+                    <div className={css.cartForm}>
+                        <CartForm id={pizza.id} />
+                    </div>
                 </div>
                 <PizzaComments comments={pizza.comments} />
                 <div>
                     <h2>Añade tu comentario</h2>
-                    <CommentCreation/>
+                    <CommentCreation />
                 </div>
             </main>
         </Page>
