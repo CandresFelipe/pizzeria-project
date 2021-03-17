@@ -2,10 +2,10 @@
     display: grid;
     gap: var(--space-m);
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    }  
-    
+}  
 h2{
     font-weight:bold
 }
+    
 
 

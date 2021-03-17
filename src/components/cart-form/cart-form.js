@@ -7,7 +7,7 @@ export function CartForm({ id }) {
     <Form>
         <input type="hidden" value={id} />
         <Button>
-            Añadir al Carrito
+            AÑADIR AL CARRITO
         </Button>
     </Form>
 

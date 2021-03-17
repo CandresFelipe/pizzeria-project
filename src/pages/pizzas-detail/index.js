@@ -4,6 +4,7 @@ import { Page, Image, CartForm, IngredientList } from '../../components';
 import { PizzaDetails } from './components/pizza-details';
 import { PizzaComments } from './components/pizza-comments/pizza-comments'
 import { CommentCreation } from './components/pizza-form-comment/create-comment'
+import css from './pizza-detail.module.css'
 
 export default function PizzaDetail({ pizza }) {
     const items = [{ text: "Carta", url: "/" }, { text: pizza.name }]
@@ -20,7 +21,7 @@ export default function PizzaDetail({ pizza }) {
                 <div>
                     <h2>Ingredientes</h2>
                     <IngredientList ingredients={pizza.ingredients} />
-                    <CartForm id={pizza.id} />
+                    <CartForm className={css.cartForm} id={pizza.id} />
                 </div>
                 <PizzaComments comments={pizza.comments} />
                 <div>
