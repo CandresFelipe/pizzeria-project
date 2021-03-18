@@ -21,12 +21,18 @@ input{
     padding: 12px 234.3px 11px 20px;
     border-radius: 5px;
     border: solid 1px var(--gray-gray-500);
-    background-color: white;
-    
+    background-color: white;    
   }
 
   h2{
     margin-top:3rem;
   }
 
+label{
+  color: black;
+}
+
+.button{
+  margin-top: 2rem; 
+}
   

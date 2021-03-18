@@ -1,3 +1,9 @@
+.pagina{
+    color: #f9fafb;
+    margin: 0 70px 0 70px;
+}
+
 h2{
-    font-weight:bold
+    font-weight:bold;
+   color:black;
 }
