@@ -1,5 +1,5 @@
 import React from 'react';
-import { PizzaCard } from './pizza-card'
+import { PizzaCard } from '../pizza-card/pizza-card'
 
 
 export function PizzaList({ pizzas }) {
