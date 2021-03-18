@@ -15,7 +15,7 @@ export function CommentCreation() {
         <Form>
             <div className={css.comment}>
                 <Select options={options} />
-                <TextArea/>
+                <TextArea>Añade tu compentario</TextArea> 
                 <Button className={css.button}>
                     Añadir
             </Button>

@@ -9,7 +9,7 @@ export function IngredientList({ ingredients }) {
                 {ingredients.map((ingredient) => {
                     return (
                         <li key={ingredient.id} >                           
-                          <IngredientItem ingredient={ingredient}/>
+                          <IngredientItem price={ingredient.price} name={ingredient.name}/>
                         </li> 
                     )
                 })}
