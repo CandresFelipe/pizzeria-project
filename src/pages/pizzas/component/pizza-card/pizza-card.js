@@ -14,9 +14,8 @@ export function PizzaCard({ pizza }) {
             <h2>{pizza.name}</h2>
                 <h3>Precio: {pizza.price}€</h3>
                 <Button className={css.button1}> Añadir al carrito</Button>
-            <a className={css.button2} href={url}> Ver más </a>
+            <a className={css.a} href={url}> Ver más </a>
             </div>
-           
         </div>
     )
 }

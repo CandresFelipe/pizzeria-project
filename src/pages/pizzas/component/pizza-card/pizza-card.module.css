@@ -21,7 +21,15 @@
     font-size: revert;
 }
 
-
+.a{
+    width: 147px;
+    height: 30px;
+    border-radius: 5px;
+    padding-top: inherit;
+    color: black;
+    font-size: revert;
+    background-color: white;
+}
 .image_container{
     width: auto;
     margin: auto;
