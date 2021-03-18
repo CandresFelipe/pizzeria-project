@@ -1,7 +1,13 @@
+.container{
+    width: auto;
+    height: 187px;
+    margin: 20px;
+    padding: 20px 20px 20px;
+    background-color: white;
+}
 .rating{
     font-weight: 600;
 }
-
 .userName{
     display: flex;
 }
