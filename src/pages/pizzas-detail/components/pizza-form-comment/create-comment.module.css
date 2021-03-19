@@ -1,15 +1,20 @@
+h2{
+    color:black;
+}
+
 .comment{
     display: grid;
     grid-template-rows: auto 1fr 1fr;
     gap: 1rem;
     margin: 1.25rem;
+    
 }
 .button{
-    width: 10%;
+    width: 10%;    
 }
 
 .textarea{
+    background-color: white;
     margin: 1.25rem;
     width: -webkit-fill-available;
-    
 }

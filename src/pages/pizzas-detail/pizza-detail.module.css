@@ -1,9 +1,15 @@
-.cartForm{
-    margin-bottom: 40px;
+body{
+    color: f9fafb;
 }
 .main{
-    background-color: var(--gray-50);
-    padding: 1rem;
+    color: f9fafb;
+    margin: 0 70px 0 70px;
+}
+h2{
+    color: black; 
+}
+.cartForm{
+    margin: 40px 0 40px 0;
 }
 .image_container{
     width: 50%;

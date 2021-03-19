@@ -1,17 +1,21 @@
 .container{
     width: auto;
-    height: 187px;
-    margin: 20px;
     padding: 20px 20px 20px;
     background-color: white;
 }
 .rating{
     font-weight: 600;
 }
-.userName{
+.comment{
     display: flex;
 }
-.date{
-    margin: 0 16px 15px 662px;
-}
 
+.name{
+    padding-right: 4rem;
+}
+.date{
+    margin: 0 16px 15px 600px;
+    }
+p{
+    color:black;
+}

@@ -1,9 +1,7 @@
 import React from 'react';
 import { BreadCrumbs } from '../../components'
 import { Page, Image, CartForm, IngredientList } from '../../components';
-import { PizzaDetails } from './components/pizza-details';
-import { PizzaComments } from './components/pizza-comments/pizza-comments'
-import { CommentCreation } from './components/pizza-form-comment/create-comment'
+import { PizzaComments, CommentCreation, DetailsCard } from './components';
 import css from './pizza-detail.module.css'
 import '../../styles'
 
@@ -18,7 +16,7 @@ export default function PizzaDetail({ pizza }) {
                 <div className={css.image_container}>
                     <Image public_id={pizza.image.public_id} width={16} height={9} big={400} small={200} />
                 </div>
-                <PizzaDetails pizza={pizza} />
+                <DetailsCard pizza={pizza} />
                 <h2>Ingredientes</h2>
                 <div>
                     <IngredientList ingredients={pizza.ingredients} />
@@ -26,6 +24,7 @@ export default function PizzaDetail({ pizza }) {
                         <CartForm id={pizza.id} />
                     </div>
                 </div>
+                <h2>Comentarios</h2>
                 <PizzaComments comments={pizza.comments} />
                 <div>
                     <h2>Añade tu comentario</h2>
