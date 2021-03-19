@@ -1,37 +1,18 @@
-.container{
-    width: 345px;
-    height: 324px;
-    border: 1px solid var(--gray-gray-500);
-    border-radius: 5px;
-    margin:1.25rem;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-}
 .text{
-    font-family: Quicksand;
-    text-align: left;
-    color: black;
-    font-size: inherit;
-}
-.button1{     
-    width: 147px;
-    height: 30px;
-    border-radius: 5px;
-    padding-top: inherit;
-    color: white;
-    font-size: revert;
+    padding: 1rem;
 }
 
-.a{
-    width: 147px;
-    height: 30px;
-    border-radius: 5px;
-    padding-top: inherit;
-    color: black;
-    font-size: revert;
-    background-color: white;
+.container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
-.image_container{
-    width: auto;
-    margin: auto;
-    height:auto;
+
+.image {
+    border-top-left-radius: var(--cardborderradius);
+    border-top-right-radius: var(--cardborderradius);
+}
+
+.cartform {
+    width: 100%;
 }

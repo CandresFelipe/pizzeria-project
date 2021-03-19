@@ -1,21 +1,22 @@
 import React from 'react';
-import { Button, Image } from '../../../../components'
+import { Image, CartForm, Anchor } from '../../../../components'
 import css from './pizza-card.module.css'
 
 
 export function PizzaCard({ pizza }) {
     const url = `pizzas/${pizza.id}`;
     return (
-        <div className={css.container}>
-            <div className={css.image_container}>
-                <Image public_id={pizza.image.public_id} width={16} height={9} big={500} small={200} />
-            </div>
+        <article>
+            <Image className={css.image} public_id={pizza.image.public_id} width={16} height={9} big={400} small={200} />
             <div className={css.text}>
-            <h2>{pizza.name}</h2>
-                <h3>Precio: {pizza.price}€</h3>
-                <Button className={css.button1}> Añadir al carrito</Button>
-            <a className={css.a} href={url}> Ver más </a>
+                <h2>{pizza.name}</h2>
+                <h3>{pizza.price}€</h3>
+                <div className={css.container}>
+                    <CartForm className={css.cartform} text="Añadir al carrito" />
+                    <Anchor href={url}> Ver más </Anchor>
+                </div>
+
             </div>
-        </div>
+        </article>
     )
 }
