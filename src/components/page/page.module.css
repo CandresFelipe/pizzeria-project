@@ -1,24 +1,7 @@
+:root {
+    --menu-width: 220px;
+}
 .page {
-    display:grid;
-    grid-template-columns: 250px 1fr;    
-}
-.menu {
-    background-color: var(--color-primary);
-    color: var(--color-primary-text);
-    height:auto;
-    display: flex;
-    flex-direction:column;
-    justify-content: space-between;
-    padding: var(--space-xl);
-    box-sizing: border-box;
-}
-main{
-    margin: 1rem;
-}
-.link {
-    color: var(--color-primary-text);
-    text-decoration: none;
-}
-.ul{
-    list-style-type: none;
+    display: grid;
+    grid-template-columns: var(--menu-width) 1fr;
 }
