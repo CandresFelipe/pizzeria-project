@@ -1,6 +1,6 @@
 import React from 'react'
-import { Page } from '../../components'
-import { IngredientCreate, IngredientList } from './components'
+import { Page,IngredientList } from '../../components'
+import { IngredientCreate} from './components'
 import css from './ingredient.module.css'
 import '../../styles'
 
