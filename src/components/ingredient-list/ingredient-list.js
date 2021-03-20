@@ -8,7 +8,7 @@ export function IngredientList({ ingredients }) {
             <ul className={css.grid}>
                 {ingredients.map((ingredient) => {
                     return (
-                        <li key={ingredient.id} >                           
+                        <li className={css.box} key={ingredient.id} >                           
                           <IngredientItem price={ingredient.price} name={ingredient.name}/>
                         </li> 
                     )

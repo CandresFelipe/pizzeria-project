@@ -1,7 +1,8 @@
 .search{
     display: grid;
-    grid-template-columns: 18rem 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
     border-radius:5px;
+    padding:1rem 0 1rem 0;
 }
 
 :placeholder-shown{

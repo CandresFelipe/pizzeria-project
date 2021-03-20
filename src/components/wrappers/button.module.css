@@ -3,8 +3,7 @@
     border-radius: 6px;
     border-color: var(--white);
     color: var(--white);
-    width: 30%;
     height: 46px;
     font-family: Quicksand;
-    font-size: 18px;
+    font-size: 0.900rem;
 }

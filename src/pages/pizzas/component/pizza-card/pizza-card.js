@@ -13,7 +13,7 @@ export function PizzaCard({ pizza }) {
                 <h3>{pizza.price}€</h3>
                 <div className={css.container}>
                     <CartForm className={css.cartform} text="Añadir al carrito" />
-                    <Anchor href={url}> Ver más </Anchor>
+                    <Anchor href={url} text="Ver más"/>
                 </div>
 
             </div>

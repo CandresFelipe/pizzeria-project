@@ -4,4 +4,5 @@
 .page {
     display: grid;
     grid-template-columns: var(--menu-width) 1fr;
+    background-color: var(--gray-50);
 }
