@@ -1,7 +1,6 @@
 import React from 'react'
 import { Page } from '../../components'
-import { IngredientCreate } from './components'
-import {IngredientList} from './components/ingredient-list/ingredient-list/ingredient-list'
+import { IngredientCreate, IngredientList } from './components'
 import css from './ingredient.module.css'
 import '../../styles'
 
