@@ -9,7 +9,8 @@ h2{
     color: black; 
 }
 .cartForm{
-    margin: 40px 0 40px 0;
+    margin: 2.5rem 0 2.5rem 0;
+    width: 18rem;
 }
 .image_container{
     width: 50%;

@@ -6,7 +6,7 @@ import css from './ingredient-create.module.css'
 export function IngredientCreate() {
     return (
         <section>
-            <h2>Crear ingredientes</h2>
+            <h2>Crea un nuevo ingrediente</h2>
         <Form>
                 <Input label= "Añade un nombre" placeholder="Nombre"></Input>
                 <Input label ="Añade un precio" type="number" placeholder="Precio (00.00 €)"></Input>

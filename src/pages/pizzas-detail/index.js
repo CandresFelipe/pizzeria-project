@@ -14,7 +14,7 @@ export default function PizzaDetail({ pizza }) {
                 <h1 className="visually-hidden">Detalles de la pizza</h1>
                 <BreadCrumbs items={items} />
                 <div className={css.image_container}>
-                    <Image public_id={pizza.image.public_id} width={16} height={9} big={400} small={200} />
+                    <Image public_id={pizza.image.public_id} width={4} height={3} big={400} small={200} />
                 </div>
                 <DetailsCard pizza={pizza} />
                 <h2>Ingredientes</h2>
