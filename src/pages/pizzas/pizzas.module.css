@@ -1,4 +1,5 @@
 .main{
+    margin: 0 4rem 0 4rem;
     display: grid;
     background-color: var(--gray-50);
 }
