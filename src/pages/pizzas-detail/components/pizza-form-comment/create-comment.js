@@ -1,8 +1,19 @@
 import React from 'react';
-import { Form, Button, Select, TextArea } from '../../../../components'
+import { Form, Button, Select, TextArea, FormGroup, FormControl, VALIDATORS,useForm } from '../../../../components'
+import {apiCall} from '../../../../api'
+import PizzaService from '../../../../services/pizza-service'
 import css from './create-comment.module.css'
 
-export function CommentCreation() {
+export function CommentCreation({id}) {
+    const frm = new FormGroup({
+        'id':new FormControl(),
+        'text':new FormControl(),
+        'score': new FormControl()
+    })
+    const {register,handlerSubmit} = useForm(frm);
+    const submit = async (data)=>{
+        await apiCall(PizzaService.addComment,data);
+    }
     var options = {
         '1': 'Excelente',
         '2': 'Muy buena',
@@ -12,11 +23,12 @@ export function CommentCreation() {
         '6': 'Horrible'
     };
     return (
-        <Form>
+        <Form onSubmit={handlerSubmit(submit)}>
             <div className={css.comment}>
-                <Select options={options} />
-                <TextArea>Añade tu compentario</TextArea>
-                <Button className={css.button}>Añadir</Button>
+            <input type="hidden" value={id} ref={register(frm.id)}/>
+                <Select options={options} ref={register(frm.score)} />
+                <TextArea ref={register(frm.text)} placehoder="Añade tu comentario"></TextArea>
+                <Button type="submit" className={css.button}>Añadir</Button>
             </div>
         </Form>
 

@@ -11,8 +11,8 @@ export default class PizzaService{
     }
     
     static async edit(id){
-        const url = resolveUrl(`pizzas/${id}`, urlApi, query);
-        const pizza = await api(url,authorize).get()
+        const url = resolveUrl(`pizzas/${id}`, urlApi);
+        const pizza = await api(url).get(url, authorize)
         return {
             pizza
         }
@@ -35,12 +35,10 @@ export default class PizzaService{
         }
     }
 
-    static async addComment(){
+    static async addComment(comment){
+        const {id} = comment;
         const url = resolveUrl (`pizzas/${id}`, urlApi);
-        const comments = await api(url,authorize).post(body)
-        return {
-            comments
-        }
+        return await api(url).post(comment)
     }
 
 
