@@ -1,6 +1,6 @@
 import React from "react"
 import css from "./register-user.module.css"
-import { Input, Button, Form, useForm, FormGroup, FormControl } from '../../../../components'
+import { Input, Button, Form, useForm, FormGroup, FormControl } from '../../components'
 
 
 export function RegisterUser() {
