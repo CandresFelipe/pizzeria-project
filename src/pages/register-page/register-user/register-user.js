@@ -3,7 +3,6 @@ import { Input, Button, Form, useForm, FormGroup, FormControl, VALIDATORS } from
 import {apiCall} from '../../../api'
 import {UserService} from '../../../services/user-service'
 import css from "./register-user.module.css"
-import { Input, Button, Form, useForm, FormGroup, FormControl,VALIDATORS } from '../../../components'
 import '../../../styles'
 
 
