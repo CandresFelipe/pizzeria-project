@@ -3,6 +3,7 @@ import css from './text-area.module.css'
 
 export function TextArea(){
     return(
-        <textarea className={css.textarea}></textarea>
+        <textarea className={css.textarea} placeholder="Agrega tu comentario"></textarea>
+        
     )
 }

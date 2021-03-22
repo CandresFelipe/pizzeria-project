@@ -27,7 +27,7 @@ export function CommentCreation({id}) {
             <div className={css.comment}>
             <input type="hidden" value={id} ref={register(frm.id)}/>
                 <Select options={options} ref={register(frm.score)} />
-                <TextArea ref={register(frm.text)} placehoder="Añade tu comentario"></TextArea>
+                <TextArea ref={register(frm.text)} placeholder="Añade tu comentario"></TextArea>
                 <Button type="submit" className={css.button}>Añadir</Button>
             </div>
         </Form>
