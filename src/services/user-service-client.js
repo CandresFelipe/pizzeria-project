@@ -1,4 +1,5 @@
 import {api,urlClientUser,resolveUrl} from '../api/api'
+
 export class UserService{
     static async add(user){
        const url = resolveUrl('/users',urlClientUser)

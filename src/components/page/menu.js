@@ -14,7 +14,7 @@ export function Menu(){
         <div>
             <div>Carrito</div>
             <div><a className={css.link} href="/login">Login</a></div>
-            <div><a className={css.link} href="/sign">Registro</a></div>
+            <div><a className={css.link} href="/signup">Registro</a></div>
         </div>
     </div>
     )

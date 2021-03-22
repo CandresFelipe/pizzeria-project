@@ -1,6 +1,8 @@
 import React from "react";
 import css from "./user-login.module.css"
 import { Button, Input, Form, useForm, FormGroup, FormControl, VALIDATORS } from '../../../../components'
+import {apiCall} from '../../../../api'
+import {UserService} from '../../../../services/user-service'
 
 export function UserLogin() {
     const frm = new FormGroup({
@@ -9,8 +11,8 @@ export function UserLogin() {
         "remember": new FormControl(),
     });
     const { register, handlerSubmit } = useForm(frm);
-    const submit= (data)=>{
-        console.log(data)
+    const submit= async (data)=>{
+        await apiCall(UserService.login,data)
         }
 
     return (

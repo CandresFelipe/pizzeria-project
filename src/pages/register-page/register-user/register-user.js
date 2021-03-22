@@ -1,7 +1,8 @@
 import React from "react"
+import { Input, Button, Form, useForm, FormGroup, FormControl, VALIDATORS } from '../../../components'
+import {apiCall} from '../../../api'
+import {UserService} from '../../../services/user-service'
 import css from "./register-user.module.css"
-import { Input, Button, Form, useForm, FormGroup, FormControl,VALIDATORS } from '../../../components'
-
 
 export function RegisterUser() {
     const frm = new FormGroup({
@@ -12,27 +13,27 @@ export function RegisterUser() {
         "privacy": new FormControl(),
         "accept": new FormControl(),
     });
-    const {
-        register, handlerSubmit
-    } = useForm(frm);
-    function submit(data) {
-        console.log(data)
+
+    const { handlerSubmit, register } = useForm(frm)
+    const submit = async (data) => {
+        await apiCall(UserService.add, data)
     }
+
     return (
         <div className={css.registeruser}>
             <h1>¿Quieres registrarte?</h1>
             <Form onSubmit={handlerSubmit(submit)}>
                 <Input className={css.container} placeholder="Tu e-mail" ref={register(frm.email)} />
-                <Input className={css.container} placeholder="Nombre"  ref={register(frm.name)}/>
+                <Input className={css.container} placeholder="Nombre" ref={register(frm.name)} />
                 <Input className={css.container} placeholder="Apellidos" ref={register(frm.surname)} />
                 <Input className={css.container} type="password" placeholder="Contraseña" ref={register(frm.password)} />
                 <div className={css.privacy}>
-                    <Input type="checkbox" defaultChecked  ref={register(frm.privacy)}/>
+                    <Input type="checkbox" defaultChecked ref={register(frm.privacy)} />
                     <p>"He leído y acepto la Política de Privacidad" </p>
                 </div>
                 <div className={css.accept}>
-                <Input type="checkbox" defaultChecked  ref={register(frm.accept)}/>
-                <p>"Sí,acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil"</p>
+                    <Input type="checkbox" defaultChecked ref={register(frm.accept)} />
+                    <p>"Sí,acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil"</p>
                 </div>
                 <button type="submit">Registrarme</button>
             </Form>
