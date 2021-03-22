@@ -4,14 +4,19 @@
     box-sizing: border-box;
     min-width: 320px;
 }
-.container{
+.boxes{
     height: 46px;
-    margin: 5px 0 5px 0;
+    margin: 3rem 0 3rem 0;
     padding: 12px 67.3px 11px 25px;
     border-radius: 5px;
 }
+
 :placeholder-shown{
-    height: 23px;
+    height: 2.87rem;
+    width: 21.68rem;    
+    margin: 1rem 0 1rem 0 ;
+    padding: 0 0 0 1rem;
+    border-radius: 5px;
     font-family: Quicksand;
     font-size: 18px;
     font-weight: normal;
@@ -20,6 +25,8 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
+
+
 }
 .privacy{
     display:flex;

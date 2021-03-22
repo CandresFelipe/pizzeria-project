@@ -1,6 +1,7 @@
 import React from "react"
 import css from "./register-user.module.css"
 import { Input, Button, Form, useForm, FormGroup, FormControl,VALIDATORS } from '../../../components'
+import '../../../styles'
 
 
 export function RegisterUser() {
@@ -22,10 +23,10 @@ export function RegisterUser() {
         <div className={css.registeruser}>
             <h1>¿Quieres registrarte?</h1>
             <Form onSubmit={handlerSubmit(submit)}>
-                <Input className={css.container} placeholder="Tu e-mail" ref={register(frm.email)} />
-                <Input className={css.container} placeholder="Nombre"  ref={register(frm.name)}/>
-                <Input className={css.container} placeholder="Apellidos" ref={register(frm.surname)} />
-                <Input className={css.container} type="password" placeholder="Contraseña" ref={register(frm.password)} />
+                <Input className={css.boxes} placeholder="Tu e-mail" ref={register(frm.email)} />
+                <Input className={css.boxes} placeholder="Nombre"  ref={register(frm.name)}/>
+                <Input className={css.boxes} placeholder="Apellidos" ref={register(frm.surname)} />
+                <Input className={css.boxes} type="password" placeholder="Contraseña" ref={register(frm.password)} />
                 <div className={css.privacy}>
                     <Input type="checkbox" defaultChecked  ref={register(frm.privacy)}/>
                     <p>"He leído y acepto la Política de Privacidad" </p>

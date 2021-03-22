@@ -11,7 +11,7 @@ export function PizzaComments({ comments }) {
                 return (
                     <li className={css.container} key={id}>
                         <div className={css.comment}>
-                            <p className={css.user}> Nombre de usuario </p>
+                            <p className={css.name}> Nombre de usuario </p>
                             <p className={css.date}>{new Intl.DateTimeFormat('es').format(new Date(date))}</p>
                         </div>
 

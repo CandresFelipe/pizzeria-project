@@ -1,8 +1,29 @@
-.iconpage{
+.page {
     display: grid;
-    grid-template-columns: 45rem 1fr;
-    height: 64rem;
+    grid-template-columns: 1fr 1fr;
 }
-.leftmenu{
-    background-color:  #dc2626;
+
+.menu {
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: var(--space-xl);
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: var(--space-xl);
+    box-sizing: border-box;
+}
+
+.icono {
+    display: block;
+    margin: auto;
+    text-align: center;
 }

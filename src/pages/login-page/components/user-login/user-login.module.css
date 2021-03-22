@@ -32,7 +32,11 @@ button{
     border-radius: 5px;
 }
 :placeholder-shown{
-    height: 23px;
+    height: 2.87rem;
+    width: 21.68rem;    
+    margin: 1rem 0 1rem 0 ;
+    padding: 0 0 0 1rem;
+    border-radius: 5px;
     font-family: Quicksand;
     font-size: 18px;
     font-weight: normal;
@@ -41,7 +45,6 @@ button{
     line-height: normal;
     letter-spacing: normal;
     text-align: left;
-    color: #6b7280;
 }
 .firstcheckbox{
     display:flex
